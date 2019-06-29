@@ -1,0 +1,15 @@
+options:
+	P: &8« &eWerbung &8»
+	
+command /WWB [<text>]:
+	aliases: wb
+	permission: YT.WB
+	trigger:
+		if arg 1 is not set:
+			send "{@p} &cMache /Werbung oder /wb und dan [text]"
+		if arg 1 is set:
+			send "{@p} &3In 5 sekunden kommt deine werbung"
+			wait 5 seconds
+			broadcast "&3"
+			broadcast "{@p} %arg 1%"
+			broadcast "&3"
